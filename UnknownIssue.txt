@@ -1,0 +1,2 @@
+https://github.com/kutzer/URSimulationToolbox/archive/refs/heads/main.zip
+https://github.com/kutzer/URSimulationToolbox/archive/master.zip
