@@ -14,10 +14,11 @@ function varargout = URSimulationToolboxVer
 %   M. Kutzer 24Mar2021, USNA
 
 % Updates:
-%   26Mar2021 - Removed "master" reference
+%   26Mar2021 - Removed "master" reference from update, check for master
+%               branch for support toolboxes in intall. 
 
 A.Name = 'Universal Robot Simulation Toolbox';
-A.Version = '1.0.1';
+A.Version = '1.0.2';
 A.Release = '(R2019a)';
 A.Date = '26-Mar-2021';
 A.URLVer = 1;
