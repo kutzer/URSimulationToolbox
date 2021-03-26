@@ -13,10 +13,13 @@ function varargout = URSimulationToolboxVer
 %
 %   M. Kutzer 24Mar2021, USNA
 
+% Updates:
+%   26Mar2021 - Removed "master" reference
+
 A.Name = 'Universal Robot Simulation Toolbox';
-A.Version = '1.0.0';
+A.Version = '1.0.1';
 A.Release = '(R2019a)';
-A.Date = '24-Mar-2021';
+A.Date = '26-Mar-2021';
 A.URLVer = 1;
 
 msg{1} = sprintf('MATLAB %s Version: %s %s',A.Name, A.Version, A.Release);

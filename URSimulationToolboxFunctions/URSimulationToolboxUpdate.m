@@ -5,7 +5,7 @@ function URSimulationToolboxUpdate
 %   M. Kutzer 24Mar2021, USNA
 
 % Updates:
-
+%   26Mar2021 - Accounted for GitHub's removal of "master" in references.
 
 % TODO - Find a location for "URSimulationToolbox Example SCRIPTS"
 % TODO - update function for general operation
@@ -40,7 +40,9 @@ end
 [ok,msg] = mkdir(tempdir,tmpFolder);
 
 %% Download and unzip toolbox (GitHub)
-url = sprintf('https://github.com/kutzer/%sToolbox/archive/master.zip',toolboxName);
+%url = sprintf('https://github.com/kutzer/%sToolbox/archive/master.zip',toolboxName); <--- Github removed references to "master"
+url = sprintf('https://github.com/kutzer/%sToolbox/archive/refs/heads/main.zip',toolboxName);
+
 try
     %fnames = unzip(url,pname);
     %urlwrite(url,fullfile(pname,tmpFname));
