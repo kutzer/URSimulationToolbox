@@ -17,6 +17,7 @@ function varargout = URSimulationToolboxVer
 %   26Mar2021 - Removed "master" reference from update, check for master
 %               branch for support toolboxes in intall. 
 %   21Apr2021 - Added Patch Toolbox to install 
+%   21Apr2021 - Added Geometry Toolbox to install
 
 A.Name = 'Universal Robot Simulation Toolbox';
 A.Version = '1.0.3';
