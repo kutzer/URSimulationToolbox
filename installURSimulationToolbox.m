@@ -25,7 +25,8 @@ function installURSimulationToolbox(replaceExisting)
 %% Define support toolboxes
 supportToolboxes = {...
     'Transformation';...
-    'Plotting'};
+    'Plotting';...
+    'Patch'};
 
 %% Assign tool/toolbox specific parameters
 dirName = 'ursimulation';
