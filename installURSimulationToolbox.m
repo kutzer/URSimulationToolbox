@@ -17,7 +17,9 @@ function installURSimulationToolbox(replaceExisting)
 %   M. Kutzer, 24Mar2021, USNA
 
 % Updates
-
+%   21Apr2021 - Added Patch Toolbox to install 
+%   21Apr2021 - Added Geometry Toolbox to install
+%   20Jul2021 - Subdirectory error fix
 
 % TODO - Allow users to create a local version if admin rights are not
 % possible.
@@ -168,7 +170,8 @@ set(wb,'Visible','off');
 
 %% Save toolbox path
 %addpath(genpath(toolboxRoot),'-end');
-addpath(toolboxRoot,'-end');
+%addpath(toolboxRoot,'-end');
+addpath( genpath(toolboxRoot','-end') );  % Add path and subfolders
 savepath;
 
 %% Rehash toolbox cache

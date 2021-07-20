@@ -18,11 +18,12 @@ function varargout = URSimulationToolboxVer
 %               branch for support toolboxes in intall. 
 %   21Apr2021 - Added Patch Toolbox to install 
 %   21Apr2021 - Added Geometry Toolbox to install
+%   20Jul2021 - Subdirectory error fix
 
 A.Name = 'Universal Robot Simulation Toolbox';
-A.Version = '1.0.3';
+A.Version = '1.0.4';
 A.Release = '(R2019a)';
-A.Date = '21-Apr-2021';
+A.Date = '20-Jul-2021';
 A.URLVer = 1;
 
 msg{1} = sprintf('MATLAB %s Version: %s %s',A.Name, A.Version, A.Release);
