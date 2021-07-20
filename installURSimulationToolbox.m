@@ -171,7 +171,7 @@ set(wb,'Visible','off');
 %% Save toolbox path
 %addpath(genpath(toolboxRoot),'-end');
 %addpath(toolboxRoot,'-end');
-addpath( genpath(toolboxRoot','-end') );  % Add path and subfolders
+addpath( genpath(toolboxRoot),'-end' );  % Add path and subfolders
 savepath;
 
 %% Rehash toolbox cache
