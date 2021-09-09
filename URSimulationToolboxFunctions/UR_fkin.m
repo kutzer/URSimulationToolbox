@@ -13,9 +13,12 @@ function H_t2o = UR_fkin(urMod,q,H_t2e)
 %   Robot manipulator (specified using urMod) given a joint configuration.
 %
 %   Specifying the type of Universal Robot manipulator
-%        UR3 | urMod = 'UR3' *Not yet implemented
+%        UR3 | urMod = 'UR3'
 %        UR5 | urMod = 'UR5' 
 %       UR10 | urMod = 'UR10'
+%       UR3e | urMod = 'UR3e'
+%       UR5e | urMod = 'UR5e'
+%      UR10e | urMod = 'UR10e'
 %
 %   M. Kutzer 30Nov2016, USNA
 

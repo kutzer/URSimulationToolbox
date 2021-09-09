@@ -13,13 +13,18 @@ function q = UR_ikin(urMod,H_t2o,H_t2e)
 %   H_t2e).
 %
 %   Specifying the type of Universal Robot manipulator
-%        UR3 | urMod = 'UR3' *Not yet implemented
+%        UR3 | urMod = 'UR3'
 %        UR5 | urMod = 'UR5'
 %       UR10 | urMod = 'UR10'
+%       UR3e | urMod = 'UR3e'
+%       UR5e | urMod = 'UR5e'
+%      UR10e | urMod = 'UR10e'
 %
 %   Solutions are returned as a 6xN array where N defines the total number
 %   of possible joint configurations available to produce the desired
 %   end-effector or tool pose.
+%
+%   Values of q are in [-2*pi, 2*pi]
 %
 %   See also UR_fkin
 %
@@ -468,11 +473,12 @@ end
 %% Include -2*pi solutions
 for i = 1:size(q,1)
     q_neg = q;
+    % Include [-2*pi,0) solution for each row
     q_neg(i,:) = bsxfun(@minus,q_neg(i,:),2*pi);
     q = [q,q_neg];
     
     if showThetas
-        fprintf('Appended [-2*pi,0] solutions to Theta%d, Number of Solutions = %d\n',i,size(q,2));
+        fprintf('Appended [-2*pi,0) solutions to Theta%d, Number of Solutions = %d\n',i,size(q,2));
     end
 end
 
