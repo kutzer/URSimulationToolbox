@@ -21,11 +21,12 @@ function varargout = URSimulationToolboxVer
 %   20Jul2021 - Subdirectory error fix
 %   28Jul2021 - Added Piecewise Polynomial Toolbox to install
 %   27Jan2022 - Added joint limits
+%   23Feb2022 - Updated joint limits to include safe acceleration limits
 
 A.Name = 'Universal Robot Simulation Toolbox';
-A.Version = '1.0.6';
+A.Version = '1.0.7';
 A.Release = '(R2019a)';
-A.Date = '27-Jan-2022';
+A.Date = '23-Feb-2022';
 A.URLVer = 1;
 
 msg{1} = sprintf('MATLAB %s Version: %s %s',A.Name, A.Version, A.Release);
