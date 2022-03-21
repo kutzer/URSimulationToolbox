@@ -395,7 +395,7 @@ classdef URsim < matlab.mixin.SetGet % Handle
             set(fig,'Tag','UR Visualization Figure, Do Not Change');
             % Set axes limits
             set(axs,'XLim',xlimit,'YLim',ylimit,'ZLim',zlimit);
-            % Set axes aspect ratio, hold status, view, and add a light
+            % Set axes aspect ratio, hold status, view, and add a lights
             daspect(axs,[1 1 1]);
             hold(axs,'on');
             view(axs,3);
