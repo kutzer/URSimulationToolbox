@@ -175,8 +175,8 @@ catch
 end
 
 %% Save toolbox path
-genpath(toolboxRoot)
-addpath(genpath(toolboxRoot),'-end');
+genpath(toolboxPath)
+addpath(genpath(toolboxPath),'-end');
 %addpath(toolboxPath,'-end');
 pathdef_local = fullfile(userpath,'pathdef.m');
 if isAdmin
