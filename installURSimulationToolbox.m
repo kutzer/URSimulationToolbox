@@ -175,8 +175,8 @@ catch
 end
 
 %% Save toolbox path
-%addpath(genpath(toolboxRoot),'-end');
-addpath(toolboxPath,'-end');
+addpath(genpath(toolboxRoot),'-end');
+%addpath(toolboxPath,'-end');
 pathdef_local = fullfile(userpath,'pathdef.m');
 if isAdmin
     % Delete local pathdef file
