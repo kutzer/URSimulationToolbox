@@ -171,7 +171,7 @@ try
     migrateContent(toolboxExamples,toolboxPathExamples,...
         sprintf('%s Examples',toolboxName));
 catch
-    fprintf('Unable to migrate examples.');
+    fprintf('Unable to migrate examples.\n');
 end
 
 %% Save toolbox path
