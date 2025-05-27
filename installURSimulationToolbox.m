@@ -175,6 +175,7 @@ catch
 end
 
 %% Save toolbox path
+genpath(toolboxRoot)
 addpath(genpath(toolboxRoot),'-end');
 %addpath(toolboxPath,'-end');
 pathdef_local = fullfile(userpath,'pathdef.m');
