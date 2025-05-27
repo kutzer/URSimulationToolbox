@@ -329,6 +329,17 @@ function removePath(toolboxName,pName,inPath,isPath,isDelete)
 if inPath
     rmpath(pName);
     fprintf('%s path removed successfully:\n\t"%s"\n',toolboxName,pName);
+
+    % Check for and remove subdirectories
+    allPaths = path;
+    allPaths = strsplit(allPaths,pathsep);
+
+    idxInPath = find( contains(allPaths,pname) );
+    for i = reshape(idxInPath,1,[])
+        sPath = allPaths{i};
+        rmpath(sPath);
+        fprintf('\t%s subpath removed successfully:\n\t"%s"\n',toolboxName,sPath);
+    end
 end
 % Remove folder
 if isPath && isDelete
