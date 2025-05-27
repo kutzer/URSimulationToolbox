@@ -339,7 +339,7 @@ if inPath
     for i = reshape(idxInPath,1,[])
         sPath = allPaths{i};
         rmpath(sPath);
-        fprintf('\t%s subpath removed successfully:\n\t\t"%s"\n',toolboxName,sPath);
+        fprintf(' -> %s subpath removed successfully:\n\t\t"%s"\n',toolboxName,sPath);
     end
 end
 % Remove folder
