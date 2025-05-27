@@ -330,11 +330,11 @@ if inPath
     rmpath(pName);
     fprintf('%s path removed successfully:\n\t"%s"\n',toolboxName,pName);
 
-    % Check for and remove subdirectories
+    % Check for subdirectories
     allPaths = path;
     allPaths = strsplit(allPaths,pathsep);
-
-    idxInPath = find( contains(allPaths,pname) );
+    % Remove subdirectories
+    idxInPath = find( contains(allPaths,pName) );
     for i = reshape(idxInPath,1,[])
         sPath = allPaths{i};
         rmpath(sPath);
