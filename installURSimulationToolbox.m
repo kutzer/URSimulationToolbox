@@ -35,7 +35,7 @@ supportToolboxes = {};
 %% Assign tool/toolbox specific parameters
 dirName = 'ursimulation';
 toolboxContent  = 'URSimulationToolboxFunctions';
-%toolboxSupport  = 'URQtSupport'; 
+%toolboxSupport  = 'URSimulationSupport'; 
 toolboxExamples = 'URSimulationToolbox Example SCRIPTS';
 toolboxName = 'URSimulation Toolbox';
 toolboxShort = strrep(toolboxName, ' ', '');
